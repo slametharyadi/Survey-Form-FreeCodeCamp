@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form Untuk Anime Naruto</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Nama
+        <input type="text" value="" placeholder="Enter your name" id="name" name="name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email
+        <input type="email" value="" placeholder="Enter your email" id="email" name="email" required />
+      </label>
+      <label for="number" id="number-label">
+        Age
+        <input type="number" value="" placeholder="Age" id="number" required min="17" required max="50" name="number" />
+      </label>
+
+      <label for="dropdown">
+        Shinobi yang paling kamu sukai di desa Daun ?
+        <select id="dropdown">
+          <option value="choose">Pilih Shinobi</option>
+          <option value="Naruto">Naruto</option>
+          <option value="Sasuke">Sasuke</option>
+          <option value="Jiraiya">Jiraiya</option>
+          <option value="Kakashi">Kakashi</option>
+          <option value="Sakura">Sakura</option>
+          <option value="Maito Guy">Maito Guy</option>
+          <option value="Sunade">Sunade</option>
+          <option value="Hinata">Hinata</option>
+          <option value="Minato">Minato</option>
+          <option value="Hashirama">Hashirama</option>
+        </select>
+      </label>
+      <div class="radio">
+        <p>Apakah kamu menyukai anime Naruto ?</p>
+        <input type="radio" id="suka" name="anime" value="suka" />
+        <label for="suka">Suka</label> <br />
+        <input type="radio" id="tidaksuka" name="anime" value="tidaksuka" />
+        <label for="tidaksuka">Tidak Suka</label> <br />
+        <input type="radio" id="sangatsuka" name="anime" value="sangatsuka" />
+        <label for="sangatsuka">Sangat Suka</label>
+      </div>
+
+      <label for="">
+        Jurus yang kamu sukai dari para shinobi ?
+        <select id="dropdown">
+          <option value="choose">Pilih Shinobi</option>
+          <option value="Naruto">Seribu Bayangan(naruto)</option>
+          <option value="Sasuke">Cidori (Sasuke)</option>
+          <option value="Naruto">Rasaingan(Naruto)</option>
+          <option value="Kakashi">Gerbang Kematian(Maito Guy)</option>
+        </select>
+      </label>
+
+      <div class="checkbox">
+        <p id="desa">Desa yang paling kamu sukai ?</p>
+        <input type="checkbox" id="konohagakure" name="konohagakure" value="konohagakure" />
+        <label for="konohagakure">Konohagakure</label><br />
+        <input type="checkbox" id="amegakure" name="amegakure" value="amegakure" />
+        <label for="amegakure">Amegakure</label><br />
+        <input type="checkbox" id="iwagakure" name="iwagakure" value="iwagakure" />
+        <label for="iwagakure">Iwagakure</label><br />
+        <input type="checkbox" id="sunagakure" name="sunagakure" value="sunagakure" />
+        <label for="sunagakure">Sunagakure</label><br />
+        <input type="checkbox" id="Irigakure" name="irigakure" value="irigakure" />
+        <label for="irigakure">Irigakure</label>
+      </div>
+
+      Pendapatmu tentang anime Naruto ?
+      <textarea name="pendapat" id="pendapat" cols="30" rows="10" placeholder="Tulis pendapatmu disini"></textarea>
+
+      <input type="Submit" id="submit" />
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
